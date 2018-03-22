@@ -1,0 +1,69 @@
+{
+    "agent_type": "OLMar", 
+    "input": {
+        "coin_number": 11, 
+        "end_date": "2017/07/01", 
+        "fake_ratio": 1, 
+        "feature_number": 3, 
+        "global_period": 1800, 
+        "is_permed": false, 
+        "market": "poloniex", 
+        "norm_method": "absolute", 
+        "online": false, 
+        "portion_reversed": false, 
+        "save_memory_mode": false, 
+        "start_date": "2015/07/01", 
+        "test_portion": 0.08, 
+        "volume_average_days": 30, 
+        "window_size": 31
+    }, 
+    "layers": [
+        {
+            "activation_function": "relu", 
+            "filter_number": 3, 
+            "filter_shape": [
+                1, 
+                2
+            ], 
+            "padding": "valid", 
+            "regularizer": null, 
+            "strides": [
+                1, 
+                1
+            ], 
+            "type": "ConvLayer", 
+            "weight_decay": 0.0
+        }, 
+        {
+            "activation_function": "relu", 
+            "filter_number": 10, 
+            "regularizer": "L2", 
+            "type": "EIIE_Dense", 
+            "weight_decay": 5e-09
+        }, 
+        {
+            "regularizer": "L2", 
+            "type": "EIIE_Output_WithW", 
+            "weight_decay": 5e-08
+        }
+    ], 
+    "random_seed": 0, 
+    "trading": {
+        "buffer_biased": 5e-05, 
+        "learning_rate": 0.00028, 
+        "rolling_training_steps": 0, 
+        "trading_consumption": 0.0025
+    }, 
+    "training": {
+        "batch_size": 1000, 
+        "buffer_biased": 5e-05, 
+        "decay_rate": 1.0, 
+        "decay_steps": 50000, 
+        "fast_train": true, 
+        "learning_rate": 0.00028, 
+        "loss_function": "loss_function6", 
+        "snap_shot": false, 
+        "steps": 8000, 
+        "training_method": "Adam"
+    }
+}
