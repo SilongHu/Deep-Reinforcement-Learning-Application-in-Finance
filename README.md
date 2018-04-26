@@ -2,7 +2,7 @@
 
 USC 2018 Spring Directed Research ----- Deep Reinforcement Learning Application in Finance
 
-In this project, we are using [Google Trends data](https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8) as our source and algorithm LSTM (Long Short Time Memory) for predicting portfolio's weights, based on [ZhengyaoJiang's paper](https://arxiv.org/pdf/1706.10059.pdf) and [his github](https://github.com/ZhengyaoJiang/PGPortfolio).
+In this project, we are using [Google Trends](https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8) as our source data and algorithm LSTM (Long Short Time Memory) for predicting portfolio's weights, based on [ZhengyaoJiang's paper](https://arxiv.org/pdf/1706.10059.pdf) and [his github](https://github.com/ZhengyaoJiang/PGPortfolio).
 
 ## Getting Started
 
@@ -10,12 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Before we installing the MPI4PY, MPICH source code should be compiled. Downloaded from [MPICH Source Code Download](https://www.mpich.org/downloads/)
+Before we grab the Google Trends data, [PGPortfolio](https://github.com/ZhengyaoJiang/PGPortfolio) should be downloaded first. 
 
 ```
-$tar -zxvf mpich-XX.gz
+$ git clone https://github.com/ZhengyaoJiang/PGPortfolio.git
 ```
-
+After that, you should modified his repo slightly. The 4 different parts are following:
+Move to the [USERGUIDE](https://github.com/ZhengyaoJiang/PGPortfolio/blob/master/user_guide.md) for details. 
 And /cd that directory
 
 ```
@@ -23,7 +24,7 @@ $./configure
 $[sudo] make && make install
 ```
 
-### Installing
+### Generating
 
 After installing the MPICH, then install MPI4PY.
 
