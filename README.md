@@ -17,7 +17,7 @@ $ git clone https://github.com/ZhengyaoJiang/PGPortfolio.git
 ```
 After that, you should modified his repo slightly. The 4 different parts are following:
 
-![Different Graph](https://github.com/SilongHu/Deep-Reinforcement-Learning-Application-in-Finance/blob/master/four_little_modified.png).
+![Different Graph](https://github.com/SilongHu/Deep-Reinforcement-Learning-Application-in-Finance/blob/master/four_little_modified.png)
 
 Adding the GREEN contents and removing the RED contents for 4 different places in 3 different files.
 
