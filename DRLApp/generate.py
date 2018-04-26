@@ -57,7 +57,8 @@ def generate_data(choice):
                  'ARDR':'ardor','CVC':'civic','LBC':'lbry credits',\
                  'STEEM':'steem','OMNI':'omni','BCN':'bytecoin','NAV':'navcoin',\
                  'PASC':'pascalcoin','POT':'potcoin','XCP':'counterparty','VIA':'viacoin',\
-                 'XPM':'primecoin','RIC':'riecoin','XBC':'Bitcoinplus','GNO':'gnosis'}
+                 'XPM':'primecoin','RIC':'riecoin','XBC':'Bitcoinplus','GNO':'gnosis',\
+		 'CLAM':'CLAMS'}
 
     # First We should gather the configure information from train_package
     config_info = load_config_data(choice)

@@ -18,6 +18,21 @@ The LSTM training part is modified from:
 
 These flags are parameters of LSTM network
 '''
+
+class FLAG(object):
+    def __init__(self):
+	self.input_size = 1
+	self.num_steps = 15
+	self.num_layers = 1
+	self.lstm_size = 128
+	self.batch_size = 32
+	self.keep_prob = 0.8
+	self.init_learning_rate = 0.001
+	self.learning_rate_decay = 0.99
+	self.init_epoch = 5
+	self.max_epoch = 50
+FLAGS = FLAG()
+'''
 flags = tf.app.flags
 flags.DEFINE_integer("input_size", 1, "Input size [1]")
 flags.DEFINE_integer("num_steps", 15, "Num of steps [15]")
@@ -30,7 +45,7 @@ flags.DEFINE_float("learning_rate_decay", 0.99, "Decay rate of learning rate. [0
 flags.DEFINE_integer("init_epoch", 5, "Num. of epoches considered as early stage. [5]")
 flags.DEFINE_integer("max_epoch", 50, "Total training epoches. [50]")
 FLAGS = flags.FLAGS
-
+'''
 def build_parser():
     '''
     Command:
