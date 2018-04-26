@@ -2,7 +2,7 @@
 
 USC 2018 Spring Directed Research ----- Deep Reinforcement Learning Application in Finance
 
-In this project, we are using [Google Trends](https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8) as our source data and algorithm LSTM (Long Short Time Memory) for predicting portfolio's weights, based on [ZhengyaoJiang's paper](https://arxiv.org/pdf/1706.10059.pdf) and [his github](https://github.com/ZhengyaoJiang/PGPortfolio).
+In this project, we are using [Google Trends](https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8) as our source data and algorithm LSTM (Long Short Time Memory) for predicting portfolio's weights, based on [ZhengyaoJiang's paper](https://arxiv.org/pdf/1706.10059.pdf) and [his github](https://github.com/ZhengyaoJiang/PGPortfolio), under [Ubuntu 64-bit 16.04.1 System](https://www.ubuntu.com/download/desktop)
 
 ## Getting Started
 
